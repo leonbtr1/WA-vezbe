@@ -30,3 +30,7 @@ app.get("/pizze", (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server na ${PORT}`)
 })
+
+app.get("/bzvz", (req, res) => {
+    res.sendFile(__dirname + '')
+})
